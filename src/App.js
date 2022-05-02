@@ -13,14 +13,13 @@ function App() {
   }
   if (dogs.length===0) {
     getDogs()
-
   }
   return (
     <div className="App">
       <BrowserRouter>
         <Nav dogs={dogs}/>
         <Routes>
-          {/* <Route path="/dogs" /> */}
+          <Route path="/dogs" />
           <Route element={<Doglist dogs={dogs} />} path="/" />
           {/* <Route element={<DogDetails />} path="/dogs/:name" /> */}
           <Route path="*" element={<Navigate to="/dogs" />} />

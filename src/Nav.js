@@ -7,11 +7,11 @@ function Nav({ dogs }) {
     return (
         dogs.map(dog => {
             return (
-                <div>
+                <i>
                     <Link to={`/dogs/${dog.name}`}>
                         {dog.name}
                     </Link>
-                </div>
+                </i>
             )
 
         })
